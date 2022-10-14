@@ -52,14 +52,22 @@
 	<?php 
 		function test_input($data)
 			{
-				$data=trim($data);
+		<?php
+   //php 7.3.0
+   echo "Hello, Dcoder! "
+
+ ?>		$data=trim($data);
 				$data=stripcslashes($data);
 				$data=htmlspecialchars($data);
 				return $data;
 			}
 
 			if(isset($_POST['submit']))
-			{
+			{<?php
+   //php 7.3.0
+   echo "Hello, Dcoder! "
+
+ ?>
 				$username=$password="";
 				if($_SERVER["REQUEST_METHOD"] == "POST")
 				{
